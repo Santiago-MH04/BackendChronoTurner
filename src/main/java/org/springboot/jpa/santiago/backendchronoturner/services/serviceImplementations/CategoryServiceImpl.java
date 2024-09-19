@@ -35,6 +35,9 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public void deleteById(String id) {
-        this.repoCategory.deleteById(id);
+        this.repoCategory.findById(id).ifPresentOrElse(
+                c -> {this.repoCategory.deleteById(id);},
+                () -> System.out.println("The category you're trying to delete hasn't been found")  //Aquí también se puede arrojar una excepción bien poderosa
+        );
     }
 }

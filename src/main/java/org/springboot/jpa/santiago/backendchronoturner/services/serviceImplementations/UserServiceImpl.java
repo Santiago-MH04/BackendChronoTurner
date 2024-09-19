@@ -35,6 +35,10 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void deleteById(String id) {
+        this.repoUser.findById(id).ifPresentOrElse(
+                u -> {this.repoUser.deleteById(id);},
+                () -> System.out.println("The user you're trying to delete hasn't been found")  //Aquí también se puede arrojar una excepción bien poderosa
+        );
         this.repoUser.deleteById(id);
     }
 }
