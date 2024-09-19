@@ -26,6 +26,11 @@ public class GoalServiceImpl implements GoalService {
     }
 
     @Override
+    public Optional<Goal> findById(String id) {
+        return this.repoGoal.findById(id);
+    }
+
+    @Override
     public Goal findByNameContaining(String name) {
         return this.repoGoal.findByNameContaining(name.toLowerCase())
                 .stream().findFirst()
@@ -44,6 +49,9 @@ public class GoalServiceImpl implements GoalService {
 
     @Override
     public void deleteById(String id) {
-        this.repoGoal.deleteById(id);
+        this.repoGoal.findById(id).ifPresentOrElse(
+                g -> {this.repoGoal.deleteById(id);},
+                () -> System.out.println("The goal you're trying to delete hasn't been found")  //Aquí también se puede arrojar una excepción bien poderosa
+        );
     }
 }

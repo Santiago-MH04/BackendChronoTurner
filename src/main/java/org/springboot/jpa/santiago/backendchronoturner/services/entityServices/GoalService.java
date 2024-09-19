@@ -4,6 +4,7 @@ import org.springboot.jpa.santiago.backendchronoturner.entities.Goal;
 import org.springboot.jpa.santiago.backendchronoturner.services.methodServices.*;
 
 public interface GoalService extends FindAllService<Goal>,
+                             FindByIdService<Goal, String>,
                              FindByNameService<Goal, String>,
                              SaveService<Goal>,
                              DeleteService<Goal, String> {
