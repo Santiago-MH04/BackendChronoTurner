@@ -2,7 +2,7 @@ package org.springboot.jpa.santiago.backendchronoturner.services.methodServices;
 
 import java.util.Optional;
 
-public interface FindByIdService<ID, Entity> {
+public interface FindByIdService<Entity, ID> {
     //Atributos de FindByIdService
     //Constructores de FindByIdService
     //Asignadores de atributos de FindByIdService (setters)
