@@ -50,7 +50,7 @@ public class GoalController {
     }
 
     @RequestMapping(value = "/update/{id}", method = {PUT, PATCH})
-    public ResponseEntity<?> updateGoal(@RequestBody Goal goal, @PathVariable String id){   //Dejar así un momento antes de añadir la anotación @Valid
+    public ResponseEntity<?> updateGoal(@RequestBody Goal goal, @PathVariable String id){
         goal = this.goalService.save(goal);
         return ResponseEntity.ok("This goal has been successfully updated. See you next time");   //También se puede crear un interceptor para este método, de tal manera que devolvamos un Goal en lugar de un mensaje, y dejar el mensaje en el log
     }

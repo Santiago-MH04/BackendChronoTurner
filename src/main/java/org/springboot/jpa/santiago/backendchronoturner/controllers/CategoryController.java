@@ -38,5 +38,4 @@ public class CategoryController {
         this.categoryService.deleteById(id);
         return ResponseEntity.ok("The category has been successfully deleted");
     }
-
 }

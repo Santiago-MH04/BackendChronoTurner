@@ -27,4 +27,17 @@ public class PriorityServiceImpl implements PriorityService {
     public Priority save(Priority priority) {
         return this.repoPriority.save(priority);
     }
+
+    @Override
+    public void delete(Priority priority) {
+        this.repoPriority.delete(priority);
+    }
+
+    @Override
+    public void deleteById(String id) {
+        this.repoPriority.findById(id).ifPresentOrElse(
+                p -> {this.repoPriority.deleteById(id);},
+                () -> System.out.println("The priority you're trying to delete hasn't been found")  //Aquí también se puede arrojar una excepción bien poderosa
+        );
+    }
 }
