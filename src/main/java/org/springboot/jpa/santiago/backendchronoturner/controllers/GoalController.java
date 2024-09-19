@@ -53,4 +53,10 @@ public class GoalController {
         goal = this.goalService.save(goal);
         return ResponseEntity.ok("This goal has been successfully updated. See you next time");   //También se puede crear un interceptor para este método, de tal manera que devolvamos un Goal en lugar de un mensaje, y dejar el mensaje en el log
     }
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<?> deleteGoal(@RequestBody String id){
+        this.goalService.deleteById(id);    //Acá se captura la excepción, en caso tal de que ocurra
+        return ResponseEntity.ok("The goal has been successfully deleted");
+    }
 }
