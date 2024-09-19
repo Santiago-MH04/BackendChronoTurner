@@ -6,7 +6,7 @@ import org.springboot.jpa.santiago.backendchronoturner.services.methodServices.*
 public interface TaskService extends FindAllService<Task>,
                              FindByIdService<Task, String>,
                              SaveService<Task>,
-                             RemoveService<Task, String>{
+        DeleteService<Task, String> {
     //Atributos de TaskService
     //Constructores de TaskService
     //Asignadores de atributos de TaskService (setters)

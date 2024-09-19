@@ -5,7 +5,7 @@ import org.springboot.jpa.santiago.backendchronoturner.services.methodServices.*
 
 public interface UserService extends FindByIdService<User, String>,
                                      SaveService<User>,
-                                     RemoveService<User, String>{
+                                     DeleteService<User, String> {
     //Atributos de UserService
     //Constructores de UserService
     //Asignadores de atributos de UserService (setters)

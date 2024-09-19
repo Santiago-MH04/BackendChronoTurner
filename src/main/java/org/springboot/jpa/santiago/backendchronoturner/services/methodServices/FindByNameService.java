@@ -6,5 +6,5 @@ public interface FindByNameService<Entity, ID> {
     //Asignadores de atributos de FindByNameService (setters)
     //Lectores de atributos de FindByNameService (getters)
         //Métodos de FindByNameService
-    public Entity findByName(ID id);
+    public Entity findByNameContaining(ID id);
 }

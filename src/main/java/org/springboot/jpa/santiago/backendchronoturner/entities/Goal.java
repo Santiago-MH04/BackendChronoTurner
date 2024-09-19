@@ -38,5 +38,12 @@ public class Goal {
     //Constructores de Goal
     //Asignadores de atributos de Goal (setters)
     //Lectores de atributos de Goal (getters)
-    //Métodos de Goal
+        //Métodos de Goal
+    @PrePersist
+    public void GoalCreation() {
+        if (this.startDate == null) {
+            this.startDate = LocalDateTime.now();
+        }
+        this.status = GoalStatus.STARTED;
+    }
 }
