@@ -21,7 +21,7 @@ public class UserController {
     //Lectores de atributos de UserController (getters)
         //Métodos de UserController
     @GetMapping("/show/{id}")
-    public ResponseEntity<User> findById(String id) {
+    public ResponseEntity<User> findById(@PathVariable String id) {
         User user = this.userService.findById(id).orElseThrow();//Para un manejo de excepciones bien poderoso
         return ResponseEntity.ok(user);
     }
