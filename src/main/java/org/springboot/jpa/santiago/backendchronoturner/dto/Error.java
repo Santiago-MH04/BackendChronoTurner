@@ -11,15 +11,15 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder*/
-public class Error {    //Esta es una clase DTO con el mensaje personalizado de error
-        //Atributos de CLASE
+public class Error {    //Esta es una Error DTO con el mensaje personalizado de error
+        //Atributos de Error
     private String errorName;
     private String message;
     private int status;
     private LocalDateTime date; //Este es el que genera el timestamp
 
-    //Constructores de CLASE
-        //Asignadores de atributos de CLASE (setters)
+    //Constructores de Error
+        //Asignadores de atributos de Error (setters)
     public void setErrorName(String errorName) {
         this.errorName = errorName;
     }
@@ -33,7 +33,7 @@ public class Error {    //Esta es una clase DTO con el mensaje personalizado de 
                     this.date = date;
                 }
 
-        //Lectores de atributos de CLASE (getters)
+        //Lectores de atributos de Error (getters)
     public String getErrorName() {
         return this.errorName;
     }
@@ -47,5 +47,5 @@ public class Error {    //Esta es una clase DTO con el mensaje personalizado de 
                     return this.date;
                 }
 
-    //Métodos de CLASE
+    //Métodos de Error
 }

@@ -2,6 +2,7 @@ package org.springboot.jpa.santiago.backendchronoturner.controllers;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springboot.jpa.santiago.backendchronoturner.entities.Goal;
+import org.springboot.jpa.santiago.backendchronoturner.exceptions.EntityNotFoundException;
 import org.springboot.jpa.santiago.backendchronoturner.services.entityServices.GoalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -33,7 +34,10 @@ public class GoalController {
 
     @GetMapping("/show/{id}")
     public ResponseEntity<Goal> findById(@PathVariable String id){
-        Goal goal = this.goalService.findById(id).orElseThrow();    //Para un manejo de excepciones bien poderoso
+        Goal goal = this.goalService.findById(id)
+                .orElseThrow(
+                        () -> new EntityNotFoundException("Error! The goal you're looking for hasn't been registered")
+                );    //Para un manejo de excepciones bien poderoso
         return ResponseEntity.ok(goal);
     }
 
