@@ -36,10 +36,10 @@ public class HandlerExceptionController {
                        EntityNotFoundException.class})
     public Map<String, Object> userNotFoundException (Exception e) {   //Como devuelve un Map, y no un ResponseEntity, anotar con el tipo de error que devuelve
         Map<String, Object> error = new HashMap<>();  //Así como se envía un DTO, se puede enviar otro objeto serializable, como un Map
-        error.put("errorName", "El usuario o su rol no están definidos");
-        error.put("message", e.getMessage());
-        error.put("status", HttpStatus.INTERNAL_SERVER_ERROR.value());
-        error.put("date", LocalDate.now());
+            error.put("errorName", "Entity instance not found");
+            error.put("message", e.getMessage());
+            error.put("status", HttpStatus.INTERNAL_SERVER_ERROR.value());
+            error.put("date", LocalDate.now());
 
         return error;
     }
