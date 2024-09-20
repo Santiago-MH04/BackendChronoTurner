@@ -1,8 +1,13 @@
 package org.springboot.jpa.santiago.backendchronoturner.exceptions;
 
-public class UserNotFoundException {
+public class UserNotFoundException extends RuntimeException {
     //Atributos de CLASE
-    //Constructores de CLASE
+        //Constructores de CLASE
+    public UserNotFoundException() {    }
+    public UserNotFoundException(String message) {
+        super(message);
+    }
+
     //Asignadores de atributos de CLASE (setters)
     //Lectores de atributos de CLASE (getters)
     //Métodos de CLASE
