@@ -3,7 +3,7 @@ package org.springboot.jpa.santiago.backendchronoturner.controllers;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springboot.jpa.santiago.backendchronoturner.entities.User;
-import org.springboot.jpa.santiago.backendchronoturner.exceptions.UserNotFoundException;
+import org.springboot.jpa.santiago.backendchronoturner.exceptions.EntityNotFoundException;
 import org.springboot.jpa.santiago.backendchronoturner.services.entityServices.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -25,7 +25,7 @@ public class UserController {
     public ResponseEntity<User> findById(@PathVariable String id) {
         User user = this.userService.findById(id)
                 .orElseThrow(
-                    () -> new UserNotFoundException("Error! The user you're looking for does not exist")
+                    () -> new EntityNotFoundException("Error! The user you're looking for does not exist")
                 );  //Para un manejo de excepciones bien poderoso
         return ResponseEntity.ok(user);
     }

@@ -1,7 +1,7 @@
 package org.springboot.jpa.santiago.backendchronoturner.controllers.exceptionControllers;
 
 import org.springboot.jpa.santiago.backendchronoturner.dto.Error;
-import org.springboot.jpa.santiago.backendchronoturner.exceptions.UserNotFoundException;
+import org.springboot.jpa.santiago.backendchronoturner.exceptions.EntityNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotWritableException;
@@ -33,13 +33,13 @@ public class HandlerExceptionController {
 
     @ExceptionHandler({NullPointerException.class,
                        HttpMessageNotWritableException.class,
-                       UserNotFoundException.class})
+                       EntityNotFoundException.class})
     public Map<String, Object> userNotFoundException (Exception e) {   //Como devuelve un Map, y no un ResponseEntity, anotar con el tipo de error que devuelve
         Map<String, Object> error = new HashMap<>();  //Así como se envía un DTO, se puede enviar otro objeto serializable, como un Map
-        error.put("errorName", "El usuario o su rol no están definidos");
-        error.put("message", e.getMessage());
-        error.put("status", HttpStatus.INTERNAL_SERVER_ERROR.value());
-        error.put("date", LocalDate.now());
+            error.put("errorName", "Entity instance not found");
+            error.put("message", e.getMessage());
+            error.put("status", HttpStatus.INTERNAL_SERVER_ERROR.value());
+            error.put("date", LocalDate.now());
 
         return error;
     }
