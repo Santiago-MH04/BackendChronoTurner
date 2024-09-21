@@ -3,7 +3,8 @@ package org.springboot.jpa.santiago.backendchronoturner.utils.enumUser;
 public enum UserType {
         //Atributos de userType
     PREMIUM,
-    BASIC;
+    BASIC,
+    ENTERPRISE;//Añadir Enterprise, coming soon, donc, no problemo
 
     //Constructores de userType
     //Asignadores de atributos de userType (setters)
