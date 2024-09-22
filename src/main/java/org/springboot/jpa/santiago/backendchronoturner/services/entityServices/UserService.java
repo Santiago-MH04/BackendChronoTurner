@@ -4,6 +4,7 @@ import org.springboot.jpa.santiago.backendchronoturner.entities.User;
 import org.springboot.jpa.santiago.backendchronoturner.services.methodServices.*;
 
 public interface UserService extends FindByIdService<User, String>,
+                                     FindByEmailService<User, String>,
                                      SaveService<User>,
                                      DeleteService<User, String> {
     //Atributos de UserService

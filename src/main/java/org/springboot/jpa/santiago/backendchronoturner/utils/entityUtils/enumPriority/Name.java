@@ -1,4 +1,4 @@
-package org.springboot.jpa.santiago.backendchronoturner.utils.enumPriority;
+package org.springboot.jpa.santiago.backendchronoturner.utils.entityUtils.enumPriority;
 
 public enum Name {
         //Atributos de Name

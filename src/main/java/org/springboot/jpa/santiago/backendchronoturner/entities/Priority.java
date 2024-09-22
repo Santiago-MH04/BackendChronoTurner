@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springboot.jpa.santiago.backendchronoturner.utils.enumPriority.Name;
+import org.springboot.jpa.santiago.backendchronoturner.utils.entityUtils.enumPriority.Name;
 
 import java.util.List;
 

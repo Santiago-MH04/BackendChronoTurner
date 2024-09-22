@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springboot.jpa.santiago.backendchronoturner.utils.enumGoal.GoalStatus;
+import org.springboot.jpa.santiago.backendchronoturner.utils.entityUtils.enumGoal.GoalStatus;
 
 import java.time.LocalDateTime;
 import java.util.List;

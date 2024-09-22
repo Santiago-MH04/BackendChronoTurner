@@ -1,4 +1,4 @@
-package org.springboot.jpa.santiago.backendchronoturner.utils.enumUser;
+package org.springboot.jpa.santiago.backendchronoturner.utils.entityUtils.enumUser;
 
 public enum UserType {
         //Atributos de userType

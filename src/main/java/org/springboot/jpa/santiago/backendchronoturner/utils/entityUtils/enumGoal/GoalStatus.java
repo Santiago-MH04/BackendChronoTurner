@@ -1,4 +1,4 @@
-package org.springboot.jpa.santiago.backendchronoturner.utils.enumGoal;
+package org.springboot.jpa.santiago.backendchronoturner.utils.entityUtils.enumGoal;
 
 public enum GoalStatus {
         //Atributos de goalStatus

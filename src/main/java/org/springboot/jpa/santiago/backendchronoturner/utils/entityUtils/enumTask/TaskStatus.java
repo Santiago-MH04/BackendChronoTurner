@@ -1,4 +1,4 @@
-package org.springboot.jpa.santiago.backendchronoturner.utils.enumTask;
+package org.springboot.jpa.santiago.backendchronoturner.utils.entityUtils.enumTask;
 
 public enum TaskStatus {
         //Atributos de TaskStatus

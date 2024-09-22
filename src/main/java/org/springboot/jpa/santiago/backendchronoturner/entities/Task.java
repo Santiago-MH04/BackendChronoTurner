@@ -5,8 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springboot.jpa.santiago.backendchronoturner.utils.enumTask.SubtaskStatus;
-import org.springboot.jpa.santiago.backendchronoturner.utils.enumTask.TaskStatus;
+import org.springboot.jpa.santiago.backendchronoturner.utils.entityUtils.enumTask.SubtaskStatus;
+import org.springboot.jpa.santiago.backendchronoturner.utils.entityUtils.enumTask.TaskStatus;
 
 import java.time.LocalDateTime;
 
