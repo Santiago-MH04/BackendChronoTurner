@@ -3,9 +3,11 @@ package org.springboot.jpa.santiago.backendchronoturner.repositories;
 import org.springboot.jpa.santiago.backendchronoturner.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
+@Repository
 public interface UserRepository extends JpaRepository<User, String> {
     //Atributos de UserRepository
     //Constructores de UserRepository

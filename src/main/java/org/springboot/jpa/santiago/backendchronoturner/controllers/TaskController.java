@@ -3,7 +3,6 @@ package org.springboot.jpa.santiago.backendchronoturner.controllers;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springboot.jpa.santiago.backendchronoturner.entities.Task;
-import org.springboot.jpa.santiago.backendchronoturner.entities.User;
 import org.springboot.jpa.santiago.backendchronoturner.services.entityServices.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

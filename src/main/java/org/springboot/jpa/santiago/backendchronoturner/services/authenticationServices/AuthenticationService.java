@@ -36,13 +36,14 @@ public class AuthenticationService {
     private TokenRepository repoToken;
     @Autowired
     private UserRepository repoUser;
+    @Autowired
+    private JSWTService jwtService;
+    @Value("${spring.mailing.frontend.activation-url}")
+    private String activationUrl;
 
     private final PasswordEncoder passwordEncoder;
     private final EmailService emailService;
     private final AuthenticationManager authenticationManager;
-    private final JSWTService jwtService;
-    @Value("${spring.mailing.frontend.activation-url}")
-    private String activationUrl;
 
     //Constructores de AuthenticationService
     //Asignadores de atributos de AuthenticationService (setters)

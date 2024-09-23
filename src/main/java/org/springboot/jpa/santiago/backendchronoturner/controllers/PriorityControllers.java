@@ -1,7 +1,6 @@
 package org.springboot.jpa.santiago.backendchronoturner.controllers;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.springboot.jpa.santiago.backendchronoturner.entities.Goal;
 import org.springboot.jpa.santiago.backendchronoturner.entities.Priority;
 import org.springboot.jpa.santiago.backendchronoturner.services.entityServices.PriorityService;
 import org.springframework.beans.factory.annotation.Autowired;
