@@ -4,6 +4,7 @@ package org.springboot.jpa.santiago.backendchronoturner.entities;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
+import org.springboot.jpa.santiago.backendchronoturner.utils.entityUtils.enumGoal.GoalStatus;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -41,5 +42,11 @@ public class Role {
     //Constructores de Role
     //Asignadores de atributos de Role (setters)
     //Lectores de atributos de Role (getters)
-    //Métodos de Role
+        //Métodos de Role
+    @PrePersist
+    public void roleCreation() {
+        if (this.createdDate == null) {
+            this.createdDate = LocalDateTime.now();
+        }
+    }
 }
