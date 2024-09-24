@@ -58,6 +58,13 @@ public class User implements UserDetails, Principal {
     //Asignadores de atributos de User (setters)
     //Lectores de atributos de User (getters)
         //Métodos de User
+    @PrePersist
+    public void userCreation() {
+        if (this.createdDate == null) {
+            this.createdDate = LocalDateTime.now();
+        }
+    }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return this.roles
