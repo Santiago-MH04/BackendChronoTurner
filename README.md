@@ -24,7 +24,7 @@ Clone, download or fork, the backend repository
    ```
 
 Once you have the repository at hand, you can also take a look at the development-environment documentation for the endpoints once you have run the application, and then either logged in, or signed up, since it also implements security.
-You can take a look at the endpoints documentation by clicking [here](https://localhost:8080/swagger-ui.html) and submitting the token. Otherwise, Swagger will not show you the information of the endpoints.
+You can take a look at the endpoints documentation by clicking [here](http://18.191.247.216/swagger-ui.html) and submitting the token. Otherwise, Swagger will not show you the information of the endpoints.
 
 In the same way, and before you run the application, when you open the .env file, located on resources folder, you need to set the new environment variables in order to get a proper connection to a database, so it will properly work.
 

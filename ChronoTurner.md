@@ -21,9 +21,9 @@ The team has found inspiration in the Harry Potter novels, especially Harry Pott
   LinkedIn: [LinkedIn Profile](www.linkedin.com/in/julianalvarezval)  
   Git Username: juliansnei
 - **Pablo Andrés López Zapata**  
-  Email: pablitodahiana@gmail.com 
-  LinkedIn: [LinkedIn Profile](pablitodahiana@gmail.com)  
-  Git Username: [GitUsername2]
+  Email: pablitodahiana@gmail.com  
+  LinkedIn: [LinkedIn Profile](http://www.linkedin.com/in/pablo-lopez-702501288)  
+  Git Username: PablolzDev
 - **Santiago Marín Higuita**  
   Email: santimh04@gmail.com  
   LinkedIn: [LinkedIn Profile](www.linkedin.com/in/santiago-marin-higuita-016676194)  
@@ -44,7 +44,25 @@ We have set our tasks and user histories, as a team, by using ClickUp. By clicki
 
 ## UML Diagrams
 The diagrams for Chrono-Turner are basically two, one Entity-Relationship diagram, and other class diagram, both under the UML paradigm, which will allow other programmers to understand what Chrono-Turner is about
-[Insert or link to UML diagrams relevant to the project.]
+
+1. **Entity-Relationship diagram**: we count on seven entity classes in order to structure the information, which are:
+- User
+- Task
+- Goal
+- Priority
+- Category
+- Role
+- Token
+
+As presented, here it is the diagram
+
+![EntityRelationshipDiagram here](path/to/image.png)
+
+2. **Class diagram**: it shows all the classes, their access modifiers, fields and methods.
+
+Take a look at our class diagram
+
+![ClassDiagram here](path/to/image.png)
 
 ## Step-by-Step Setup and run
 To set up the project, follow these instructions:
@@ -56,3 +74,11 @@ To set up the project, follow these instructions:
    ```bash
    git clone https://github.com/Santiago-MH04/BackendChronoTurner.git
    ```
+   
+2. **To run the frontend**:
+- Prerequisites: Before you begin, ensure you have met the following requirements:
+  - You have installed Node.js (version 14 or later recommended) 
+  - You have a basic understanding of React and Next.js
+- Navigate to the project directory
+- Run `npm install` to install the dependencies
+- Follow [these instructions](https://github.com/PablolzDev/Chrono-Turner-FrontEnd/blob/main/README.md) in order to have it deployed and running
