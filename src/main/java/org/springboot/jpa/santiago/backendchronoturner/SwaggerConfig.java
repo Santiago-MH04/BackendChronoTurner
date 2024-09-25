@@ -30,7 +30,7 @@ import org.springframework.http.HttpHeaders;
         servers = {
             @Server(
                 description = "DEV_SERVER",
-                url = "https://localhost:8080"
+                url = "http://18.191.247.216:8080" /*"https://localhost:8080"*/
             ),
                 @Server(
                 description = "PROD_SERVER",
