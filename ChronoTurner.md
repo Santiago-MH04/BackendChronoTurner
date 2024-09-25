@@ -1,4 +1,4 @@
-![Chrono-Turner logo here](path/to/image.png)
+![Chrono-Turner logo here](https://github.com/Santiago-MH04/BackendChronoTurner/blob/main/src/main/resources/img/ChronoTurnerLogo.png)
 # Chrono-Turner
 
 Turning chaos into clarity. A new era of personal organisation is about to begin.
@@ -56,13 +56,13 @@ The diagrams for Chrono-Turner are basically two, one Entity-Relationship diagra
 
 As presented, here it is the diagram
 
-![EntityRelationshipDiagram here](path/to/image.png)
+![EntityRelationshipDiagram here](https://github.com/Santiago-MH04/BackendChronoTurner/blob/main/src/main/resources/img/EntityRelationshipDiagram.jpeg)
 
 2. **Class diagram**: it shows all the classes, their access modifiers, fields and methods.
 
 Take a look at our class diagram
 
-![ClassDiagram here](path/to/image.png)
+![ClassDiagram here](https://github.com/Santiago-MH04/BackendChronoTurner/blob/main/src/main/resources/img/ClassDiagram.png)
 
 ## Step-by-Step Setup and run
 To set up the project, follow these instructions:
