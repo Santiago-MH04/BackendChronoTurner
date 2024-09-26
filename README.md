@@ -1,4 +1,4 @@
-![Chrono-Turner logo here](path/to/image.png)
+![Chrono-Turner logo here](https://github.com/Santiago-MH04/BackendChronoTurner/blob/main/src/main/resources/img/ChronoTurnerLogo.png)
 
 # Chrono-Turner Backend
 Turning chaos into clarity. A new era of personal organisation is about to begin.
